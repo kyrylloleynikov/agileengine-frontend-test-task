@@ -26,6 +26,7 @@ You can use one of the pre-installed frameworks for development or install the o
     * [SASS](http://sass-lang.com)
     * [LESS](http://lesscss.org)
 * JS
+    * [ES6](https://babeljs.io/docs/learn-es2015/)
     * [Angular 1](https://angularjs.org)
     * [React](https://facebook.github.io/react/)
     * [Backbone](http://backbonejs.org)
