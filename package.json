@@ -14,7 +14,6 @@
     "gulp-open": "^2.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
     "knockout": "^3.4.0",
     "react": "^15.3.2",

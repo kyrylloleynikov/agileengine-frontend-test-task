@@ -1,3 +1,4 @@
 node_modules
 .idea
-js/bundle.js
+js/compiled
+css/compiled

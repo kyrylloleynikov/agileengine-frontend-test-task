@@ -16,7 +16,7 @@ gulp.task('default', ['compileJS', 'sass', 'sass:watch', 'less', 'less:watch', '
 gulp.task('sass', function() {
     gulp.src('./css/*.scss')
         .pipe(gulpSass().on('error', gulpSass.logError))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css/compiled'));
 });
 
 gulp.task('sass:watch', function() {
@@ -28,7 +28,7 @@ gulp.task('less', function() {
         .pipe(gulpLess({
             'paths': ['./css']
         }))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css/compiled'));
 });
 
 gulp.task('less:watch', function() {
@@ -40,7 +40,7 @@ gulp.task('open', function() {
 });
 
 gulp.task('compileJS', function() {
-    let bundler = watchify(browserify('./app.js', { debug: true }).transform(babelify));
+    let bundler = watchify(browserify('./js/app.js', { debug: true }).transform(babelify));
 
     function rebundle() {
         bundler.bundle()
@@ -52,7 +52,7 @@ gulp.task('compileJS', function() {
             .pipe(buffer())
             .pipe(sourceMaps.init({ loadMaps: true }))
             .pipe(sourceMaps.write('./'))
-            .pipe(gulp.dest('./js'));
+            .pipe(gulp.dest('./js/compiled'));
     }
 
     bundler.on('update', function() {
