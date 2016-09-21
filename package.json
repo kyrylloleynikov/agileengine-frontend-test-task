@@ -1,6 +1,7 @@
 {
   "name": "agileengine-frontend-test-task",
   "version": "1.0.0",
+  "repository": "https://github.com/javakorr/agileengine-frontend-test-task",
   "scripts": {
     "start": "gulp"
   },
