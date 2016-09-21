@@ -1,0 +1,29 @@
+{
+  "name": "agileengine-frontend-test-task",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "gulp-less": "^3.1.0",
+    "gulp-open": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.0",
+    "knockout": "^3.4.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "watchify": "^3.7.0"
+  }
+}
